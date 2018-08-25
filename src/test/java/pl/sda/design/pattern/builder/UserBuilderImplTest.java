@@ -1,4 +1,4 @@
-package pl.sda.design.pattern;
+package pl.sda.design.pattern.builder;
 
 import org.junit.Before;
 import org.junit.Test;
