@@ -1,4 +1,4 @@
-package pl.sda.design.pattern;
+package pl.sda.design.pattern.singleton;
 
 import org.junit.Test;
 import pl.sda.design.pattern.singleton.RegistrySingletonLazy;
