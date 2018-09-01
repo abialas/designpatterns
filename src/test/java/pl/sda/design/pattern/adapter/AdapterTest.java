@@ -11,6 +11,9 @@ public class AdapterTest {
     public void testBillPrinterWorksAsReceiptPrinter() {
         Printer printer = new BillPrinterAdapter(new BillPrinter());
         printer.printReceipt("bill");
+
+        CashRegisterMachine cashRegisterMachine =
+          new CashRegisterMachine(new BillPrinterAdapter((new BillPrinter())));
     }
 
 }

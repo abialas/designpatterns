@@ -2,6 +2,7 @@ package pl.sda.design.pattern.composite;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
@@ -35,4 +36,9 @@ public class MultiDepartment implements Department {
           .map(Objects::toString)
           .collect(Collectors.joining("\n\r"));
     }
+
+    public Iterator<Department> getChildDepartments() {
+        return childDepartments.iterator();
+    }
+
 }
